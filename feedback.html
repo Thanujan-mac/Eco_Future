@@ -18,20 +18,20 @@
 
         #feedbackForm fieldset {
             border: 1px solid rgba(46, 204, 113, 0.22);
-            border-radius: var(--radius-md);
+            border-radius: 16px;
             padding: 2rem 1.8rem;
             margin-bottom: 2.8rem;
-            background: var(--glass-bg);
+            background: rgba(0, 87, 0, 0.03);
             backdrop-filter: blur(12px);
             box-shadow: inset 0 2px 12px rgba(0,0,0,0.2);
         }
 
         #feedbackForm legend {
             font-size: 1.25rem;
-            color: var(--primary-green);
+            color: #2ecc71;
             font-weight: 600;
             padding: 0 1rem;
-            background: var(--bg-primary);
+            background: #06140f;
         }
 
         .form-group {
@@ -42,11 +42,11 @@
             display: block;
             margin-bottom: 0.6rem;
             font-weight: 500;
-            color: var(--text-main);
+            color: #f8fafc;
         }
 
         .required {
-            color: #f87171;
+            color: #cf6363;
             margin-left: 0.35rem;
         }
 
@@ -54,9 +54,9 @@
             width: 100%;
             padding: 0.9rem 1.1rem;
             background: rgba(255,255,255,0.04);
-            border: 1px solid var(--glass-border);
-            color: var(--text-main);
-            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #f8fafc;
+            border-radius: 8px;
             font-size: 1rem;
             transition: all 0.25s ease;
         }
@@ -70,13 +70,18 @@
 
         #counter {
             font-size: 0.9rem;
-            color: var(--text-muted);
+            color: #2ecc71;
             margin-top: 0.5rem;
             display: block;
         }
 
-        #counter.warning { color: #fbbf24; }
-        #counter.danger   { color: #f87171; }
+        #counter.warning {
+            color: #fbbf24; 
+        }
+
+        #counter.danger  { 
+            color: #f87171; 
+        }
 
         /* Vertical Programme Cards */
         .program-selection .options-grid {
@@ -88,10 +93,10 @@
 
         .program-card-option {
             background: rgba(10, 31, 24, 0.5);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
             overflow: hidden;
-            transition: all var(--transition-normal);
+            transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
         }
@@ -117,13 +122,13 @@
         .program-card-option h4 {
             margin: 0 0 0.5rem;
             font-size: 1.15rem;
-            color: var(--text-main);
+            color: #f8fafc;
         }
 
         .program-card-option p {
             margin: 0;
             font-size: 0.92rem;
-            color: var(--text-muted);
+            color: #94a3b8;
             line-height: 1.45;
         }
 
@@ -134,14 +139,14 @@
         }
 
         .program-card-option input:checked + .inner {
-            border: 2px solid var(--primary-green);
+            border: 2px solid #2ecc71;
             background: rgba(46,204,113,0.14);
             box-shadow: 0 0 0 4px rgba(46,204,113,0.25);
         }
 
         .inner {
             border: 2px solid transparent;
-            border-radius: var(--radius-md);
+            border-radius: 16px;
             transition: all 0.28s ease;
         }
 
@@ -284,7 +289,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
         
         <div class="program-card-option">
             <div class="inner">
-                <img src="Tree planting drive.png" alt="Tree Planting">
+                <img src="image/Tree planting drive.png" alt="Tree Planting">
                 <div class="content">
                 <h4>Tree Planting Drive</h4>
                 <p>Weekly planting in city parks & suburbs</p>
@@ -295,7 +300,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
 
         <div class="program-card-option">
             <div class="inner">
-                <img src="Beach clean up.png" alt="Beach Clean-Up">
+                <img src="image/Beach clean up.png" alt="Beach Clean-Up">
                 <div class="content">
                     <h4>Beach Clean-Up</h4>
                     <p>Help remove plastic waste on sea shores.</p>
@@ -306,7 +311,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
        
         <div class="program-card-option">
             <div class="inner">
-                <img src="Waste management.png" alt="Waste Management">
+                <img src="image/Waste management.png" alt="Waste Management">
                 <div class="content">
                     <h4>Waste Management</h4>
                     <p>Collect and Recycle garbages</p>
@@ -317,7 +322,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
 
         <div class="program-card-option">
             <div class="inner">
-                <img src="River and Canal clean up.png" alt="River Clean-Up">
+                <img src="image/River and Canal clean up.png" alt="River Clean-Up">
                 <div class="content">
                     <h4>River & Canal Clean-Up</h4>
                     <p>Clear waste from urban waterways</p>
@@ -328,7 +333,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
 
         <div class="program-card-option">
             <div class="inner">
-                <img src="Organic Farming workshop.png" alt="Organic Farming">
+                <img src="image/Organic Farming workshop.png" alt="Organic Farming">
                 <div class="content">
                     <h4>Organic Farming Workshop</h4>
                     <p>Learn sustainable growing techniques</p>
@@ -339,7 +344,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e) {
 
          <div class="program-card-option">
             <div class="inner">
-                <img src="Seed Banks.png" alt="Seed Banks">
+                <img src="image/Seed Banks.png" alt="Seed Banks">
                 <div class="content">
                     <h4>Seed Banks</h4>
                     <p>Preserving seeds for future</p>
