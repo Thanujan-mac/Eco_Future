@@ -227,11 +227,11 @@
 
         /* Team Grid Layout */
         .team-grid {
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2.5rem;
             margin-top: 3rem;
-            margin-bottom: 3rem;
+            margin-bottom: 15rem;
             padding: 0 2rem;
             max-width: 1200px;
             margin-left: auto;
@@ -249,9 +249,12 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
             cursor: pointer;
             outline: none;
             position: relative;
+            width: 300px;
+            height:auto;
             z-index: 1;
         }
 
